@@ -59,8 +59,8 @@ GameObject:
   - component: {fileID: 114990586029104228}
   - component: {fileID: 54259278622165198}
   - component: {fileID: 82270947238547718}
-  - component: {fileID: 114094498354761626}
   - component: {fileID: 82659866261338188}
+  - component: {fileID: 114094498354761626}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -276,7 +276,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 1
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -361,7 +361,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d20536431a6ebb438b9a5db23bcffca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helicopter: {fileID: 0}
+  helicopter: {fileID: 114724010012516002, guid: ce1b070e1412c3047bf76931473550d6,
+    type: 2}
   playerSpawnPoints: {fileID: 0}
   whatHappened: {fileID: 8300000, guid: 6f49368f721214fcc81fda6a7ccf9343, type: 3}
 --- !u!114 &114877684375639884

@@ -13,12 +13,25 @@ public class Player : MonoBehaviour {
     private Transform[] spawnPoints;
     private bool lastToggle = false;
     private bool reSpawn = false;
+    private AudioSource innerVoice; 
 
     // Use this for initialization
     void Start () {
         spawnPoints = playerSpawnPoints.GetComponentsInChildren<Transform>();
         //print(spawnPoints.Length); //check how many things get out --> gets 4
-	}
+
+        AudioSource[] audioSources = GetComponents<AudioSource>();
+        foreach (AudioSource audioSource in audioSources)
+        {
+            if (audioSource.priority == 1)
+            {
+                innerVoice = audioSource;
+            }
+        }
+
+        innerVoice.clip = whatHappened;
+        innerVoice.Play();
+    }
 	
 	// Update is called once per frame
 	void Update () {
