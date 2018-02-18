@@ -6,7 +6,9 @@ public class Player : MonoBehaviour {
 
     public Helicopter helicopter;
     public Transform playerSpawnPoints; // the parent of the spawn points
-    
+
+    public AudioClip whatHappened;
+
 
     private Transform[] spawnPoints;
     private bool lastToggle = false;

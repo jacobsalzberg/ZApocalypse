@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DayCicle : MonoBehaviour {
-
-
+    
     [Tooltip("Number of minutes per second that pass, try 60")]
     public float minutesPerSecond;
 
