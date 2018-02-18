@@ -30,7 +30,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1220160880977928
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -93,9 +93,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4727398193655388}
   m_Father: {fileID: 4310852624090114}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4310852624090114
 Transform:
@@ -108,7 +109,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4471840863284158}
-  - {fileID: 4727398193655388}
   - {fileID: 4171922883008854}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -132,12 +132,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1220160880977928}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4310852624090114}
-  m_RootOrder: 1
+  m_Father: {fileID: 4171922883008854}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &20303137208169948
 Camera:
@@ -391,10 +391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d20536431a6ebb438b9a5db23bcffca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helicopter: {fileID: 114724010012516002, guid: ce1b070e1412c3047bf76931473550d6,
-    type: 2}
   playerSpawnPoints: {fileID: 0}
-  whatHappened: {fileID: 8300000, guid: 6f49368f721214fcc81fda6a7ccf9343, type: 3}
 --- !u!114 &114877684375639884
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -418,6 +415,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e5420c06a09ec84e9169643682232b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whatHappened: {fileID: 8300000, guid: 6f49368f721214fcc81fda6a7ccf9343, type: 3}
+  goodLandingArea: {fileID: 8300000, guid: 0f00476efd1774d2587939e6bd1a6bb4, type: 3}
 --- !u!114 &114990586029104228
 MonoBehaviour:
   m_ObjectHideFlags: 1
